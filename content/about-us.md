@@ -17,4 +17,6 @@ keywords:
     "Mechatronics Engineer",
     "Engineering Recruiter",
   ]
+
+layout: about-us
 ---
