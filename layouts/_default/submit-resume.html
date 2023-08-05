@@ -1,0 +1,156 @@
+{{define "main"}}
+<!-- Contect Section -->
+<section id="contact" class="editable">
+  <div class="contact">
+    <div class="container">
+      <section>
+        <div class="page-title">
+          <div class="container">
+            <h1>Submit Resume</h1>
+            <hr class="custom-hr" />
+          </div>
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="submit-form">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group mb-3">
+                    <label class="main-label" for=""
+                      >When are you available?</label
+                    >
+                    <div class="radios">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="available"
+                          id="available1"
+                        />
+                        <label class="form-check-label" for="available1">
+                          Sometime in the future
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="available"
+                          id="available2"
+                          checked
+                        />
+                        <label class="form-check-label" for="available2">
+                          Keep me updated
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="available"
+                          id="available3"
+                          checked
+                        />
+                        <label class="form-check-label" for="available3">
+                          Available Now
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-3">
+                    <label class="main-label" for=""
+                      >What is your notice period?</label
+                    >
+                    <div class="radios">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="period"
+                          id="period1"
+                        />
+                        <label class="form-check-label" for="period1">
+                          1 Month
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="period"
+                          id="period2"
+                          checked
+                        />
+                        <label class="form-check-label" for="period2">
+                          2 Month
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="period"
+                          id="period3"
+                          checked
+                        />
+                        <label class="form-check-label" for="period3">
+                          3 Month
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="period"
+                          id="period4"
+                          checked
+                        />
+                        <label class="form-check-label" for="period4">
+                          Longer
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-3" id="addResume">
+                <div class="row">
+                  <div class="next-resume col-md-6">
+                    <label class="main-label" for="formFile" class="form-label"
+                      >Attach Resume</label
+                    >
+                    <input class="form-control" type="file" id="formFile" />
+                  </div>
+                </div>
+                <button id="addnew" class="btn-pm" type="button">
+                  <i class="fa fa-plus"></i>
+                </button>
+                <button type="button" class="delete btn-pm">
+                  <i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <div class="form-group mb-3">
+                <label class="main-label" for=""
+                  >Describe your ideal job in 10 words or less</label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <input class="bttn" type="submit" value="Send Now" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
