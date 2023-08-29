@@ -1,0 +1,28 @@
+{{ define "main"}}
+<section>
+  <div class="page-title">
+    <div class="container">
+      <h1>{{.Title}}</h1>
+      <hr class="custom-hr" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="about-us">
+    <div class="container">
+      <div class="about-us-wrapper">
+        <div class="left-side">
+          <img
+            src="{{ with .Params.image}}{{.}}{{end}}"
+            alt="Electronic engineering"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="right-side recruit">{{.Content}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

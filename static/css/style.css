@@ -1691,7 +1691,18 @@ img {
   font-weight: 700;
   margin-bottom: 5px;
 }
-
+.recruit h3 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.recruit h2 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
 .about-us ul li {
   list-style: square;
   font-weight: 400;
