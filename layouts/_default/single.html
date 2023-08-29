@@ -1,0 +1,45 @@
+{{define "main"}}
+
+<section>
+  <div class="page-title">
+    <div class="container">
+      <h1>{{.Title}}</h1>
+      <hr class="custom-hr" />
+    </div>
+  </div>
+</section>
+<!-- Blog Section -->
+
+<section id="blog">
+  <div class="blog">
+    <div class="container">
+      <div class="owl-carousel blog-carousel owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+          <div
+            class="owl-stage"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              transition: all 0s ease 0s;
+              width: 2652px;
+            "
+          >
+            <div
+              class="owl-item active"
+              style="width: 1296px; margin-right: 30px"
+            >
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-9 articles">
+                    <article>{{.Content}}</article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{end}}

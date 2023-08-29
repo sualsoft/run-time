@@ -1722,3 +1722,28 @@ img {
     line-height: 30px;
   }
 }
+
+/* Articles */
+.articles article img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 3rem 0rem;
+}
+.articles article ul {
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.articles article ul li {
+  list-style: disc;
+  margin-left: 16px;
+}
+.articles article a {
+  color: #ee3e42;
+}
+.articles article h3 {
+  font-size: 32px;
+  margin-top: 3rem;
+  font-weight: 700;
+}

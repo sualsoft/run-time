@@ -1,0 +1,86 @@
+{{define "main"}}
+
+<section>
+  <div class="page-title">
+    <div class="container">
+      <h1>Articles</h1>
+      <hr class="custom-hr" />
+    </div>
+  </div>
+</section>
+<!-- Blog Section -->
+
+<section id="blog">
+  <div class="blog">
+    <div class="container">
+      <div class="owl-carousel blog-carousel owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+          <div
+            class="owl-stage"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              transition: all 0s ease 0s;
+              width: 2652px;
+            "
+          >
+            <div
+              class="owl-item active"
+              style="width: 1296px; margin-right: 30px"
+            >
+              <div class="item">
+                <div class="row">
+                  {{ range.RegularPages}}
+                  <div class="col-md-4">
+                    <div class="single-blog">
+                      <div class="blog-content">
+                        <h4>
+                          <a href="{{.Permalink}}">{{.Title}}</a>
+                        </h4>
+                        <p>{{.Description}}</p>
+                      </div>
+                      <div class="blog-bio">
+                        <div class="blog-author">
+                          <div class="blog-img">
+                            <a href="{{.Permalink}}"
+                              ><img src="/img/testimonial/test1.png" alt=""
+                            /></a>
+                          </div>
+                          <div class="blog-title">
+                            <h4>
+                              <a href="{{.Permalink}}">Cameron Williamson</a>
+                            </h4>
+                            <p>
+                              <span>22-12-2022</span
+                              ><i class="fa-sharp fa-solid fa-circle"></i
+                              ><span>3 mins</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {{end}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-nav">
+          <button type="button" role="presentation" class="owl-prev disabled">
+            <i class="fa fa-angle-left"></i>
+          </button>
+
+          <button type="button" role="presentation" class="owl-prev">
+            <i>1</i>
+          </button>
+
+          <button type="button" role="presentation" class="owl-next">
+            <i class="fa fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{end}}
